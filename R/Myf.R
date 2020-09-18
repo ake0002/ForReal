@@ -1,15 +1,15 @@
-#' @title Square function
-#'
-#' @description Takes a vector and returns the squared vector
+
+#' @title Squared function
 #'
 #' @param x
 #'
-#' @return a vector^2
+#' @description squaring a vector
+#'
+#' @return vector squared
 #' @export
 #'
 #' @examples
-#' x=1:30 myf(x)
-#'
+#' \dontrun{x=1:30, myf(x)}
 myf = function(x){
   x^2
 
