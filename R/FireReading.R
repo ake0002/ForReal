@@ -1,15 +1,14 @@
-#' Reading FIREDAM Data
+#' @title Fire data set.
 #'
-#' @description for fire damage data
+#' @description  A data set concerning damage from fire
 #'
-#' @param fire is the data variable
+#' @details This is a standard data set from the course MATH 4753 taken from the data sets provided by the text book.
 #'
-#' @return
-#' @export
+#' @format A data frame with 15 rows and 2 variables:
+#' \describe{
+#'   \item{DISTANCE}{Distance in miles from fire station}
+#'   \item{DAMAGE}{Thouands of dollars}
+#' }
 #'
-#' @examples
-#' \dontrun data(fire)
-data =function(fire){
-  fire <- read.csv("FIREDAM.csv")
-  return(head(fire))
-}
+#' @source \url{https://www.routledge.com/Statistics-for-Engineering-and-the-Sciences-Sixth-Edition/Mendenhall-Sincich/p/book/9781498728850}
+"fire"
