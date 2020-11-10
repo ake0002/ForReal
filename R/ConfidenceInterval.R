@@ -13,7 +13,7 @@
 myci = function(x, confint=.95){
   ybar = mean(x)
 
-  t=qt(confint,length(d)-1)
+  t=qt(1-(1-confint)/2,length(x)-1)
   ci=c()
   ci[1]=mean(x)-t*sd(x)/sqrt(length(x))
   ci[2]=mean(x)+t*sd(x)/sqrt(length(x))
